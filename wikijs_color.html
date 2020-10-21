@@ -1,0 +1,27 @@
+<script>
+function color_yes_no() 
+{
+  if(document.getElementsByTagName)
+  {  
+    var table = document.getElementsByClassName("contents")[0];   
+    var cells = table.getElementsByTagName("td");   
+    for(i = 0; i < cells.length; i++)
+    {           
+      if (cells[i].textContent.toLowerCase() == "yes") 
+      {
+        cells[i].className = "table_green";
+      }
+      if (cells[i].textContent.toLowerCase() == "no") 
+      {
+        cells[i].className = "table_red";
+      }
+    } 
+  } 
+}
+setTimeout(color_yes_no, 1000);
+</script>
+
+<style> 
+  .table_green{background-color: #a5d6a7;} 
+  .table_red{background-color: #ef9a9a;} 
+</style>

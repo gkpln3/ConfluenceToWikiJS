@@ -1,0 +1,15 @@
+{
+  "name": "confluence2wikijs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "confluence2wikijs.js",
+  "dependencies": {
+    "node-html-parser": "^1.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guy Kaplan",
+  "license": "ISC"
+}
