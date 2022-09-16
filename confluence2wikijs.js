@@ -25,7 +25,7 @@ fs.readdir(directoryPath, function (err, files) {
                 page_data = "<!--\ntitle: " + page_title + "\n-->"
                 page_data = page_data + parsedHtml.querySelector("#main-content").innerHTML;
 
-                fs.writeFileSync(path.join(outDirectoryPath, file + ".html"), page_data)
+                fs.writeFileSync(path.join(outDirectoryPath, file), page_data)
             });
         }
     });
